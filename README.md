@@ -12,9 +12,7 @@ sudo docker run -ti \
     --rm \
     --device /dev/dri:/dev/dri \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v /media/foto-tmp:/media/foto-tmp \
-    -v /media/ssd:/media/ssd \
-    --workdir /home/dario \
+    --workdir /home/${USER} \
     -e DISPLAY=$DISPLAY \
     -e HOME=/home/${USER} \
     -e USER=${USER} \
