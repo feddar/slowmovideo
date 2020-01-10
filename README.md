@@ -19,3 +19,6 @@ sudo docker run -ti \
     -e USERID=1000 \
     neomediatech/slowmovideo:19.04
 ```
+
+### Notes
+From https://github.com/slowmoVideo/slowmoVideo/wiki/Download : The GPU flow program (optional) is called flowBuilder and usually produces evidently better results. Is not yet available for Windows nor recent Linux.
