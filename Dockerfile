@@ -12,11 +12,6 @@ RUN echo $TZ > /etc/timezone && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* 
 
-#RUN apt update && \
-#    apt --no-install-recommends install -y ffmpeg libavcodec-extra libavcodec-extra57 libavdevice57 libavfilter-extra libavfilter-extra6 libavformat57 && \
-#    apt-get clean && \
-#    rm -rf /var/lib/apt/lists/* 
-
 COPY start.sh /
 RUN chmod +x start.sh
 
