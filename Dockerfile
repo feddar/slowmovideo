@@ -13,8 +13,7 @@ RUN echo $TZ > /etc/timezone && \
     rm -rf /var/lib/apt/lists/* 
 
 #RUN apt update && \
-#    apt --no-install-recommends install -y ffmpeg libavcodec-extra libavcodec-extra57 libavdevice57 libavfilter-extra libavfilter-extra6 libavformat5
-7 && \
+#    apt --no-install-recommends install -y ffmpeg libavcodec-extra libavcodec-extra57 libavdevice57 libavfilter-extra libavfilter-extra6 libavformat57 && \
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/* 
 
