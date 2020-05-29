@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
     QT_GRAPHICSSYSTEM="native"
 
 RUN echo $TZ > /etc/timezone && \
-    apt update && apt -y dist-upgrade && \
-    apt --no-install-recommends install -y slowmovideo \ 
+    apt-get update && apt -y dist-upgrade && \
+    apt-get --no-install-recommends install -y slowmovideo \ 
     ffmpeg libavcodec-extra libavdevice58 libavfilter-extra libavformat58 && \
     apt-get -y autoremove --purge && \
     apt-get clean && \
